@@ -62,7 +62,9 @@ namespace Week9PrismExampleApp.ViewModels
 
         private async void NavToMoreInfoPage(WeatherItem weatherItem)
         {
-            await _navigationService.NavigateAsync("MoreInfoPage");
+            var navParams = new NavigationParameters();
+            navParams.Add("WeatherItemInfo", weatherItem);
+            await _navigationService.NavigateAsync("MoreInfoPage", navParams);
         }
 
         internal async void GetWeatherForLocation()

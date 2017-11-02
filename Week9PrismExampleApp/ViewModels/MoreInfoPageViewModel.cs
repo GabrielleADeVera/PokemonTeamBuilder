@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Prism.Navigation;
 using Xamarin.Forms.Xaml;
+using static Week9PrismExampleApp.Models.WeatherItemModel;
 
 namespace Week9PrismExampleApp.ViewModels
 {
@@ -14,7 +15,14 @@ namespace Week9PrismExampleApp.ViewModels
 
 		public DelegateCommand GoBackCommand { get; set; }
 
-		public MoreInfoPageViewModel(INavigationService navigationService)
+        private WeatherItem _weatherItem;
+        public WeatherItem WeatherItem
+        {
+            get { return _weatherItem; }
+            set { SetProperty(ref _weatherItem, value); }
+        }
+
+        public MoreInfoPageViewModel(INavigationService navigationService)
         {
 			_navigationService = navigationService;
 
@@ -32,6 +40,10 @@ namespace Week9PrismExampleApp.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            if (parameters.ContainsKey("WeatherItemInfo"))
+            {
+                WeatherItem = (WeatherItem)parameters["WeatherItemInfo"];
+            }
         }
     }
 }

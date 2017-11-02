@@ -3,8 +3,7 @@ namespace Week9PrismExampleApp
 {
     public class ApiKeys
     {
-        public ApiKeys()
-        {
-        }
+		// Obtain API Key https://openweathermap.org/api
+		public const string WeatherKey = YOUR_API_KEY_HERE;
     }
 }

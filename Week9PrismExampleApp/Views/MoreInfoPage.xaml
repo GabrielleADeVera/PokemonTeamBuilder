@@ -10,5 +10,11 @@
         <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
+        <Label
+            Text="{Binding WeatherItem.Wind.Speed, StringFormat='Wind Speed: {0}'}" />
+        <Label
+            Text="{Binding WeatherItem.Main.TempMax, StringFormat='Max Temp: {0}'}" />
+        <Label
+            Text="{Binding WeatherItem.Main.TempMin, StringFormat='Min Temp: {0}'}" />
     </StackLayout>
 </ContentPage>

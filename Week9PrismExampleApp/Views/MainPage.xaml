@@ -59,10 +59,6 @@
                                     Text="{Binding Clouds.All, StringFormat='Cloud %: {0}'}"
                                     VerticalOptions="Center"
                                     Margin="3" />
-                                <Button
-                                    x:Name="MoreButton"
-                                    Text="More"
-                                    Command="{Binding NavToMoreInfoPageCommand}" />
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>
