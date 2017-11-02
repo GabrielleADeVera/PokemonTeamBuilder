@@ -22,16 +22,26 @@ namespace Week9PrismExampleUnitTests
         }
 
         [Test]
-        public void TestAddNameAddsItemToWeatherCollection()
+        public void TestNavToNewPageCommandNavigateAsyncWithCorrectParameters()
         {
-            //Arrange: create instance of view model (done in init method)
-            //Act: Call our method under test (AddName)
-            //mainPageViewModel.AddName();
+            // Arrange: create expected NavParameters, do Mock setup for navigation
+            var expectedNavParams = new NavigationParameters();
+            expectedNavParams.Add("NavFromPage", "MainPageViewModel");
+            navigationServiceMock.Setup(
+                ns => ns.NavigateAsync(It.IsAny<string>(),
+                                     It.IsAny<NavigationParameters>(),
+                                     It.IsAny<bool?>(),
+                                       It.IsAny<bool>()));
 
-            //Assert: New item in WeatherCollection
+            // Act: Call the method/command under test
+            mainPageViewModel.NavToNewPageCommand.Execute();
 
-            Assert.Contains("Temp",
-                            mainPageViewModel.WeatherCollection);
+            // Assert: Verify that proper navigate async call was made once
+            navigationServiceMock.Verify(
+                ns => ns.NavigateAsync("SamplePageForNavigation",
+                                     expectedNavParams,
+                                    false,
+                                     true), Times.Once());
         }
     }
 }
