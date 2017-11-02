@@ -14,7 +14,11 @@ namespace Week9PrismExampleApp.ViewModels
 {
     public class MainPageViewModel : BindableBase, INavigationAware
     {
-        private string _buttonText;
+		public DelegateCommand NavToNewPageCommand { get; set; }
+		public DelegateCommand GetWeatherForLocationCommand { get; set; }
+		public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
+
+		private string _buttonText;
         public string ButtonText
         {
             get { return _buttonText; }
@@ -42,9 +46,6 @@ namespace Week9PrismExampleApp.ViewModels
             set { SetProperty(ref _weatherCollection, value); }
         }
 
-        public DelegateCommand NavToNewPageCommand { get; set; }
-        public DelegateCommand GetWeatherForLocationCommand { get; set; }
-
         INavigationService _navigationService;
 
         public MainPageViewModel(INavigationService navigationService)
@@ -53,9 +54,15 @@ namespace Week9PrismExampleApp.ViewModels
 
             NavToNewPageCommand = new DelegateCommand(NavToNewPage);
             GetWeatherForLocationCommand = new DelegateCommand(GetWeatherForLocation);
+            NavToMoreInfoPageCommand = new DelegateCommand<WeatherItem>(NavToMoreInfoPage);
 
             Title = "Xamarin Forms Application + Prism";
             ButtonText = "Add Name";
+        }
+
+        private async void NavToMoreInfoPage(WeatherItem weatherItem)
+        {
+            await _navigationService.NavigateAsync("MoreInfoPage");
         }
 
         internal async void GetWeatherForLocation()

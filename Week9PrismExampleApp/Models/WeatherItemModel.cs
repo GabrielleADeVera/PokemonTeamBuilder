@@ -44,8 +44,6 @@ namespace Week9PrismExampleApp.Models
 
             [JsonProperty("wind")]
             public Wind Wind { get; set; }
-
-
         }
 
         public partial class Coord

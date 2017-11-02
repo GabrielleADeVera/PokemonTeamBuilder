@@ -46,6 +46,10 @@
       <DependentUpon>EasyTestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\EasyTestPageViewModel.cs" />
+    <Compile Include="ViewModels\MoreInfoPageViewModel.cs" />
+    <Compile Include="Views\MoreInfoPage.xaml.cs">
+      <DependentUpon>MoreInfoPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -58,6 +62,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EasyTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MoreInfoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

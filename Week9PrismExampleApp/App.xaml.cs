@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
 using Prism.Unity;
 using Week9PrismExampleApp.Views;
+using Xamarin.Forms.Xaml;
 
 namespace Week9PrismExampleApp
 {
@@ -23,7 +24,7 @@ namespace Week9PrismExampleApp
         {
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<SamplePageForNavigation>();
-
+            Container.RegisterTypeForNavigation<MoreInfoPage>();
 		}
     }
 }

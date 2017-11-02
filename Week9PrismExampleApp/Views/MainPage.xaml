@@ -26,10 +26,21 @@
                 Command="{Binding GetWeatherForLocationCommand}" />
         </StackLayout>
         <ListView
+            x:Name="WeatherListView"
             ItemsSource="{Binding WeatherCollection}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <ViewCell
+                        x:Name="WeatherItemCell">
+                        <ViewCell.ContextActions>
+                            <MenuItem
+                                x:Name="MoreInfoButton"
+                                AutomationId="MoreInfoButton"
+                                BindingContext="{Binding Source={x:Reference WeatherListView}, Path=BindingContext}"
+                                Command="{Binding NavToMoreInfoPageCommand}"
+                                CommandParameter="{Binding Source={x:Reference WeatherItemCell}, Path=BindingContext}"
+                                Text="More" />
+                        </ViewCell.ContextActions>
                         <ViewCell.View>
                             <StackLayout
                                 Orientation="Horizontal">
@@ -42,12 +53,16 @@
                                     x:Name="TemperatureLabel"
                                     Text="{Binding Main.Temp, StringFormat='Temp: {0}'}"
                                     VerticalOptions="Center"
-                                    Margin="10" />
+                                    Margin="3" />
                                 <Label
                                     x:Name="CloudLabel"
                                     Text="{Binding Clouds.All, StringFormat='Cloud %: {0}'}"
                                     VerticalOptions="Center"
-                                    Margin="10" />
+                                    Margin="3" />
+                                <Button
+                                    x:Name="MoreButton"
+                                    Text="More"
+                                    Command="{Binding NavToMoreInfoPageCommand}" />
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>
