@@ -1,7 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" prism:ViewModelLocator.AutowireViewModel="True" x:Class="PokemonTeamBuilder.Views.MainPage" Title="MainPage">
-	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-		<Label Text="{Binding Title}" />
-        <Label Text="Hello"/>
-    </StackLayout>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+             prism:ViewModelLocator.AutowireViewModel="True" 
+             x:Class="PokemonTeamBuilder.Views.MainPage" 
+             Title="MainPage"
+             Padding="0,20,0,0">
+    <ScrollView>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                   Grid.Row="0"
+                   Grid.Column="0" >
+                <Label
+                    Text="Pokemon 1"/>
+                </StackLayout>
+                <StackLayout 
+                    Grid.Row="0"
+                    Grid.Column="1">
+                    <Label
+                    
+                    Text="Pokemon 2"/>
+                </StackLayout>
+                <StackLayout 
+                   Grid.Row="1"
+                   Grid.Column="0">
+                <Label
+                    Text="Pokemon 3"/>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="1">
+                <Label
+                    Text="Pokemon 4"/>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="2"
+                    Grid.Column="0">
+                <Label
+                    Text="Pokemon 5"/>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="2"
+                    Grid.Column="1">
+                <Label
+                    Text="Pokemon 6"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

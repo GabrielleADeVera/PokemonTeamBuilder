@@ -15,10 +15,10 @@ namespace PokemonTeamBuilder.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
-
-        public MainPageViewModel()
+        INavigationService _navigationServie;
+        public MainPageViewModel(INavigationService navigationService)
         {
-
+            _navigationServie = navigationService;
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
