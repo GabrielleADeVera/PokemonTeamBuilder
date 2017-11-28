@@ -8,17 +8,18 @@ using System.Collections.ObjectModel;
 using System.Net.Http;
 using static Week9PrismExampleApp.Models.WeatherItemModel;
 using System.Runtime.CompilerServices;
+using Microsoft.AppCenter.Analytics;
 
 [assembly: InternalsVisibleTo("Week9PrismExampleUnitTests")]
 namespace Week9PrismExampleApp.ViewModels
 {
     public class MainPageViewModel : BindableBase, INavigationAware
     {
-		public DelegateCommand NavToNewPageCommand { get; set; }
-		public DelegateCommand GetWeatherForLocationCommand { get; set; }
-		public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
+        public DelegateCommand NavToNewPageCommand { get; set; }
+        public DelegateCommand GetWeatherForLocationCommand { get; set; }
+        public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
 
-		private string _buttonText;
+        private string _buttonText;
         public string ButtonText
         {
             get { return _buttonText; }
@@ -69,6 +70,10 @@ namespace Week9PrismExampleApp.ViewModels
 
         internal async void GetWeatherForLocation()
         {
+            Analytics.TrackEvent("GetWeatherButtonTapped", new Dictionary<string, string> {
+                { "WeatherLocation", LocationEnteredByUser},
+            });
+
             HttpClient client = new HttpClient();
             var uri = new Uri(
                 string.Format(
