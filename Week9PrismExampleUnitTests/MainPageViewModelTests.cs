@@ -14,7 +14,6 @@ namespace Week9PrismExampleUnitTests
 
         Mock<INavigationService> navigationServiceMock;
 
-
         [SetUp]
         public void Init()
         {
