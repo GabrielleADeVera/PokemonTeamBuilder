@@ -1,13 +1,16 @@
-﻿<Properties StartupConfiguration="{A448DDE5-BC84-4996-834C-1A401D8C3692}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week9PrismExampleApp Status">
+﻿<Properties StartupConfiguration="{C656E3F0-C2BD-4245-A31E-FFD572668C4A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week9PrismExampleApp/ApiKeys.cs">
     <Files>
-      <File FileName="Week9PrismExampleUnitTests/MainPageViewModelTests.cs" Line="1" Column="1" />
       <File FileName="Week9PrismExampleApp/App.xaml.cs" Line="23" Column="83" />
-      <File FileName="Week9PrismExampleApp/ApiKeys.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/ApiKeys.cs" Line="7" Column="1" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MainPageViewModel.cs" Line="86" Column="32" />
+      <File FileName="Week9PrismExampleApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Week9PrismExampleApp.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp.Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
       <File FileName="Week9PrismExampleApp Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -15,6 +18,7 @@
     <Watch file="../../Git/LuxorUniversal/Luxor.Droid/Gestures/TouchEffect.cs" line="210" offsetX="658" offsetY="3172" expression="pointerLocation.Y" liveUpdate="True" />
     <Watch file="../../Git/LuxorUniversal/Luxor.Droid/Gestures/TouchEffect.cs" line="209" offsetX="658" offsetY="3119" expression="pointerLocation.X" liveUpdate="True" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1754883D-4809-467C-AE42-9B978E4F6890">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
