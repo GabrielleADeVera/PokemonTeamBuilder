@@ -8,55 +8,45 @@
              Padding="0,20,0,0">
     <ScrollView>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <StackLayout
-                   Grid.Row="0"
-                   Grid.Column="0" >
-                <Label
-                    Text="Pokemon 1"/>
-                </StackLayout>
-                <StackLayout 
-                    Grid.Row="0"
-                    Grid.Column="1">
-                    <Label
-                    
-                    Text="Pokemon 2"/>
-                </StackLayout>
-                <StackLayout 
-                   Grid.Row="1"
-                   Grid.Column="0">
-                <Label
-                    Text="Pokemon 3"/>
-                </StackLayout>
-                <StackLayout
-                    Grid.Row="1"
-                    Grid.Column="1">
-                <Label
-                    Text="Pokemon 4"/>
-                </StackLayout>
-                <StackLayout
-                    Grid.Row="2"
-                    Grid.Column="0">
-                <Label
-                    Text="Pokemon 5"/>
-                </StackLayout>
-                <StackLayout
-                    Grid.Row="2"
-                    Grid.Column="1">
-                <Label
-                    Text="Pokemon 6"/>
-                </StackLayout>
-            </Grid>
+            <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="CenterAndExpand">
+                <Entry
+                Placeholder="Enter Location"
+                Text="{Binding NameEnteredByUser}"
+                WidthRequest="200" />
+                <Button
+                Text="Search Pokemon"
+                Command="{Binding GetPokemonForNameCommand}" />
+            </StackLayout>
+            <ListView
+                    x:Name="PokemonListView"
+                    ItemsSource="{Binding PokemonCollection}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell
+                                x:Name="PokemonItemCell">
+                            <ViewCell.ContextActions>
+                                <MenuItem
+                                        x:Name="MoreInfoButton"
+                                        AutomationId="MoreInfoButton"
+                                        BindingContext="{Binding Source= {x:Reference PokemonListView}, Path=BindingContext}"
+                                        Command="{Binding NavToMoreInfoPageCommand}"
+                                        CommandParameter="{Binding Source={x:Reference PokemonItemCell},Path=BindingContext}"
+                                        Text="More"/>
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout>
+                                    <Label
+                                            Text="{Binding Name, StringFormat= 'Name: {0}'}"/>
+                                    <Label 
+                                            Text="{Binding Types, StringFormat='Type: {0}'}"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ScrollView>
 </ContentPage>
