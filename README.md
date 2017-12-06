@@ -1,4 +1,6 @@
-# Week9PrismExampleApp
-A sample app using Prism and Unity for CS 481 Week 9
+# PokemonTeamBuilder App
+An app using Prism for CS 481 final project.
+Uses pokeapi to get pokemon data to build a 6-pokemon team.
+Lists the type strengths and weaknesses based on team composition
 
-## Does not include API key must obtain key and replace ApiKeys.WeatherKey with own key https://openweathermap.org/api all functionality can be acheived with free teir of API. 
+## Disclaimer: Used Professor Desmond's Week 9 Example as a template to build this. We just wanted something that worked. Those build errors hurt so much.
