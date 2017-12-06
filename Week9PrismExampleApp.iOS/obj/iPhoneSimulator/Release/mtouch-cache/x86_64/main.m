@@ -22,10 +22,8 @@ void xamarin_register_assemblies_impl ()
 
 }
 
-extern "C" void xamarin_create_classes_Xamarin_iOS();
 void xamarin_setup_impl ()
 {
-	xamarin_create_classes_Xamarin_iOS();
 	xamarin_init_mono_debug = FALSE;
 	xamarin_executable_name = "Week9PrismExampleApp.iOS.exe";
 	mono_use_llvm = FALSE;

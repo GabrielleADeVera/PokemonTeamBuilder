@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{A448DDE5-BC84-4996-834C-1A401D8C3692}|Default">
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week9PrismExampleApp/Views/MainPage.xaml">
+    <Files>
+      <File FileName="Week9PrismExampleApp/App.xaml.cs" Line="23" Column="83" />
+      <File FileName="Week9PrismExampleApp/ApiKeys.cs" Line="6" Column="52" />
+      <File FileName="Week9PrismExampleApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Week9PrismExampleApp.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp.Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MoreInfoPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/MainPage.xaml" Line="25" Column="29" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MainPageViewModel.cs" Line="87" Column="22" NotebookId="1" />
+      <File FileName="Week9PrismExampleApp/Models/PokemonItemModel.cs" Line="1" Column="1" NotebookId="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.0.2-1/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
+    <Files>
+      <File FileName="Week9PrismExampleApp/App.xaml.cs" Line="23" Column="83" />
+      <File FileName="Week9PrismExampleApp/ApiKeys.cs" Line="8" Column="76" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MainPageViewModel.cs" Line="94" Column="28" />
+      <File FileName="Week9PrismExampleApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Week9PrismExampleApp.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp.Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="635" Column="3" />
+      <File FileName="Week9PrismExampleApp/ViewModels/EasyTestPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/ViewModels/SamplePageForNavigationViewModel.cs" Line="1" Column="1" />
+      <File FileName="Week9PrismExampleApp/App.xaml" Line="8" Column="1" />
+      <File FileName="Week9PrismExampleApp/Models/WeatherItemModel.cs" Line="132" Column="53" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MoreInfoPageViewModel.cs" Line="47" Column="10" />
+      <File FileName="Week9PrismExampleApp/Views/EasyTestPage.xaml" Line="10" Column="1" />
+      <File FileName="Week9PrismExampleApp/Views/MainPage.xaml" Line="69" Column="15" />
+      <File FileName="Week9PrismExampleApp/Models/PokemonItemModel.cs" Line="15" Column="9" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.4.1/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2003" Column="5" />
+      <File FileName="Week9PrismExampleUnitTests/MainPageViewModelTests.cs" Line="67" Column="4" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.0.2-1/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1092" Column="2" />
+>>>>>>> d0bf92570747afa21a17a37687268d331fcaaa34
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../Git/LuxorUniversal/Luxor.Droid/Gestures/TouchEffect.cs" line="210" offsetX="658" offsetY="3172" expression="pointerLocation.Y" liveUpdate="True" />
+    <Watch file="../../Git/LuxorUniversal/Luxor.Droid/Gestures/TouchEffect.cs" line="209" offsetX="658" offsetY="3119" expression="pointerLocation.X" liveUpdate="True" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.Droid PreferredExecutionTarget="Android.SelectDevice" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7DB63CB1-8FA2-41FD-8E43-62F7DD91E9A1">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Week9PrismExampleApp.iOS>
+</Properties>
