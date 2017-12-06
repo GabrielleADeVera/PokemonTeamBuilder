@@ -17,7 +17,7 @@ namespace Week9PrismExampleApp.ViewModels
     public class MainPageViewModel : BindableBase, INavigationAware
     {
         public DelegateCommand NavToNewPageCommand { get; set; }
-        public DelegateCommand GetWeatherForLocationCommand { get; set; }
+       // public DelegateCommand GetWeatherForLocationCommand { get; set; }
         public DelegateCommand GetPokemonFromNameCommand { get; set; }
         public DelegateCommand<PokemonItem> NavToMoreInfoPageCommand { get; set; }
 
@@ -80,12 +80,12 @@ namespace Week9PrismExampleApp.ViewModels
         }
 
         internal async void GetPokemonFromName(){
-            Analytics.TrackEvent("GetWeatherButtonTapped", new Dictionary<string, string> {
+           /* Analytics.TrackEvent("GetWeatherButtonTapped", new Dictionary<string, string> {
                 { "WeatherLocation", LocationEnteredByUser},
             });
-
+            */
             HttpClient client = new HttpClient();
-            var uri = new Uri(string.Format( $"{ApiKeys.PokemonKey}" + LocationEnteredByUser));
+            var uri = new Uri(string.Format( $"{ApiKeys.PokemonKey}" + LocationEnteredByUser.ToLower()));
             var response = await client.GetAsync(uri);
             PokemonItem pokemonData = null;
             if (response.IsSuccessStatusCode)

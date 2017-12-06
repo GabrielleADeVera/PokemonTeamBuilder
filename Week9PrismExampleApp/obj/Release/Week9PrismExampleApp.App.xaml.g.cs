@@ -11,8 +11,8 @@
 namespace Week9PrismExampleApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gabrielledevera/Projects/Week10Example/Week9PrismExampleApp/Week9PrismExam" +
-        "pleApp/App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/orcin002/Downloads/PokemonTeamBuilder-master/PokemonTeamBuilder/Week9Prism" +
+        "ExampleApp/App.xaml")]
     public partial class App : global::Prism.Unity.PrismApplication {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
