@@ -9,9 +9,7 @@ using System.Net.Http;
 using static Week9PrismExampleApp.Models.WeatherItemModel;
 using System.Runtime.CompilerServices;
 using Microsoft.AppCenter.Analytics;
-
-
-
+using static Week9PrismExampleApp.Models.PokemonItemModel;
 
 [assembly: InternalsVisibleTo("Week9PrismExampleUnitTests")]
 namespace Week9PrismExampleApp.ViewModels
@@ -21,7 +19,7 @@ namespace Week9PrismExampleApp.ViewModels
         public DelegateCommand NavToNewPageCommand { get; set; }
         public DelegateCommand GetWeatherForLocationCommand { get; set; }
         public DelegateCommand GetPokemonFromNameCommand { get; set; }
-        public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
+        public DelegateCommand<PokemonItem> NavToMoreInfoPageCommand { get; set; }
 
         private string _buttonText;
         public string ButtonText
@@ -44,11 +42,19 @@ namespace Week9PrismExampleApp.ViewModels
             set { SetProperty(ref _locationEnteredByUser, value); }
         }
 
-        private ObservableCollection<WeatherItem> _weatherCollection = new ObservableCollection<WeatherItem>();
+      /*  private ObservableCollection<WeatherItem> _weatherCollection = new ObservableCollection<WeatherItem>();
         public ObservableCollection<WeatherItem> WeatherCollection
         {
             get { return _weatherCollection; }
             set { SetProperty(ref _weatherCollection, value); }
+        }
+        */
+
+        private ObservableCollection<PokemonItem> _pokemonCollection = new ObservableCollection<PokemonItem>();
+        public ObservableCollection<PokemonItem> PokemonCollection
+        {
+            get { return _pokemonCollection; }
+            set { SetProperty(ref _pokemonCollection, value); }
         }
 
         INavigationService _navigationService;
@@ -59,17 +65,17 @@ namespace Week9PrismExampleApp.ViewModels
 
             NavToNewPageCommand = new DelegateCommand(NavToNewPage);
             GetPokemonFromNameCommand = new DelegateCommand(GetPokemonFromName);
-            GetWeatherForLocationCommand = new DelegateCommand(GetWeatherForLocation);
-            NavToMoreInfoPageCommand = new DelegateCommand<WeatherItem>(NavToMoreInfoPage);
+          //  GetWeatherForLocationCommand = new DelegateCommand(GetWeatherForLocation);
+            NavToMoreInfoPageCommand = new DelegateCommand<PokemonItem>(NavToMoreInfoPage);
 
             Title = "Xamarin Forms Application + Prism";
             ButtonText = "Add Name";
         }
 
-        private async void NavToMoreInfoPage(WeatherItem weatherItem)
+        private async void NavToMoreInfoPage(PokemonItem pokemonItem)
         {
             var navParams = new NavigationParameters();
-            navParams.Add("WeatherItemInfo", weatherItem);
+            navParams.Add("WeatherItemInfo", pokemonItem);
             await _navigationService.NavigateAsync("MoreInfoPage", navParams);
         }
 
@@ -81,15 +87,15 @@ namespace Week9PrismExampleApp.ViewModels
             HttpClient client = new HttpClient();
             var uri = new Uri(string.Format( $"{ApiKeys.PokemonKey}" + LocationEnteredByUser));
             var response = await client.GetAsync(uri);
-            WeatherItem weatherData = null;
+            PokemonItem pokemonData = null;
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                weatherData = WeatherItem.FromJson(content);
+                pokemonData = PokemonItem.FromJson(content);
             }
-            WeatherCollection.Add(weatherData);
+            PokemonCollection.Add(pokemonData);
         }
-
+        /*
         internal async void GetWeatherForLocation()
         {
             Analytics.TrackEvent("GetWeatherButtonTapped", new Dictionary<string, string> {
@@ -110,7 +116,7 @@ namespace Week9PrismExampleApp.ViewModels
             }
             WeatherCollection.Add(weatherData);
         }
-
+        */
         private async void NavToNewPage()
         {
             var navParams = new NavigationParameters();

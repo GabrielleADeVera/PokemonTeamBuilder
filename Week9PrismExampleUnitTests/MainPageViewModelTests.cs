@@ -4,6 +4,7 @@ using Week9PrismExampleApp.ViewModels;
 using Prism.Navigation;
 using Moq;
 using static Week9PrismExampleApp.Models.WeatherItemModel;
+using static Week9PrismExampleApp.Models.PokemonItemModel;
 
 namespace Week9PrismExampleUnitTests
 {
@@ -47,7 +48,7 @@ namespace Week9PrismExampleUnitTests
 		[Test]
 		public void TestNavToMoreInfoPageCommandNavigateAsyncWithCorrectParameters()
 		{
-            WeatherItem weatherItemToPass = new WeatherItem();
+            PokemonItem weatherItemToPass = new PokemonItem();
 			var expectedNavParams = new NavigationParameters();
             expectedNavParams.Add("WeatherItemInfo", weatherItemToPass);
 			navigationServiceMock.Setup(
