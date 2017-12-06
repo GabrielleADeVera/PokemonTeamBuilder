@@ -10,6 +10,9 @@ using static Week9PrismExampleApp.Models.WeatherItemModel;
 using System.Runtime.CompilerServices;
 using Microsoft.AppCenter.Analytics;
 
+
+
+
 [assembly: InternalsVisibleTo("Week9PrismExampleUnitTests")]
 namespace Week9PrismExampleApp.ViewModels
 {
@@ -17,6 +20,7 @@ namespace Week9PrismExampleApp.ViewModels
     {
         public DelegateCommand NavToNewPageCommand { get; set; }
         public DelegateCommand GetWeatherForLocationCommand { get; set; }
+        public DelegateCommand GetPokemonFromNameCommand { get; set; }
         public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
 
         private string _buttonText;
@@ -54,6 +58,7 @@ namespace Week9PrismExampleApp.ViewModels
             _navigationService = navigationService;
 
             NavToNewPageCommand = new DelegateCommand(NavToNewPage);
+            GetPokemonFromNameCommand = new DelegateCommand(GetPokemonFromName);
             GetWeatherForLocationCommand = new DelegateCommand(GetWeatherForLocation);
             NavToMoreInfoPageCommand = new DelegateCommand<WeatherItem>(NavToMoreInfoPage);
 
@@ -66,6 +71,23 @@ namespace Week9PrismExampleApp.ViewModels
             var navParams = new NavigationParameters();
             navParams.Add("WeatherItemInfo", weatherItem);
             await _navigationService.NavigateAsync("MoreInfoPage", navParams);
+        }
+
+        internal async void GetPokemonFromName(){
+            Analytics.TrackEvent("GetWeatherButtonTapped", new Dictionary<string, string> {
+                { "WeatherLocation", LocationEnteredByUser},
+            });
+
+            HttpClient client = new HttpClient();
+            var uri = new Uri(string.Format( $"{ApiKeys.PokemonKey}" + LocationEnteredByUser));
+            var response = await client.GetAsync(uri);
+            WeatherItem weatherData = null;
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                weatherData = WeatherItem.FromJson(content);
+            }
+            WeatherCollection.Add(weatherData);
         }
 
         internal async void GetWeatherForLocation()

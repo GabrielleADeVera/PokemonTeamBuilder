@@ -50,6 +50,7 @@
     <Compile Include="Views\MoreInfoPage.xaml.cs">
       <DependentUpon>MoreInfoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\PokemonItemModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
