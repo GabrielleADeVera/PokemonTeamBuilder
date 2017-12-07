@@ -90,3 +90,7 @@
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Xamarin.Forms.Xaml.xml
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/XFGloss.dll
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/XFGloss.xml
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/DLToolkit.Forms.Controls.FlowListView.dll
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/DLToolkit.Forms.Controls.FlowListView.xml

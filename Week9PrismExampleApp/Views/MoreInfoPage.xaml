@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="Week9PrismExampleApp.Views.MoreInfoPage"
     Padding="0,20,0,0">
@@ -18,7 +19,13 @@
         </Style> 
         </ResourceDictionary>
     </Page.Resources> 
-
+   <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="Red" StepPercentage="1" />
+            <xfg:GradientStep StepColor="Lime" StepPercentage=".5" />
+            <xfg:GradientStep StepColor="#ccd9ff" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout>
         <Button
             Text="Go Back!"
@@ -33,9 +40,6 @@
             </StackLayout>
         <Label 
             Text="{Binding PokemonItem.Types[0].Type.Name, StringFormat='Type: {0}'}"
-            Style="{StaticResource SecondaryInfo}"/>
-        <Label 
-            Text="{Binding PokemonItem.Types[1].Type.Name, StringFormat='Type: {0}'}"
             Style="{StaticResource SecondaryInfo}"/>
         
 

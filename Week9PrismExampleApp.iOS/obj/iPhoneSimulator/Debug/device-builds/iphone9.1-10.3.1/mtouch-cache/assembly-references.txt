@@ -35,6 +35,8 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Unity.4.0.1/lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/CommonServiceLocator.1.3/lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Ansuria.XFGloss.1.0.6.59/lib/Xamarin.iOS10/XFGloss.iOS.dll
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Ansuria.XFGloss.1.0.6.59/lib/Xamarin.iOS10/XFGloss.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Week9PrismExampleApp.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Xamarin.Forms.2.4.0.38779/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
@@ -45,6 +47,7 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/DLToolkit.Forms.Controls.FlowListView.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Microsoft.AppCenter.Analytics.1.0.1/lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Microsoft.AppCenter.1.0.1/lib/Xamarin.iOS10/Microsoft.AppCenter.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Microsoft.AppCenter.1.0.1/lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll

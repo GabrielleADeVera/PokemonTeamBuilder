@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="Week9PrismExampleApp.Views.MainPage"
     Title="MainPage"
@@ -35,7 +36,24 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <ListView
+            <flv:FlowListView 
+                x:Name="flowListView"
+                FlowColumnCount="2"
+                SeparatorVisibility="None"
+                HasUnevenRows="false"
+                FlowItemsSource="{Binding PokemonCollection}">
+               <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <Label 
+                            HorizontalOptions="Fill"
+                            x:Name="PokemonNameLabel"
+                            Text="{Binding Name}"
+                            VerticalOptions="Center"
+                        />
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+       <!--     <ListView
                 x:Name="PokemonListView"
                 ItemsSource="{Binding PokemonCollection}">
                 <ListView.ItemTemplate>
@@ -55,28 +73,20 @@
                                 <StackLayout
                                     Orientation="Horizontal">
                                     <Image Source="{Binding Sprites.FrontShiny}"/>
-                                    <Image Source="{Binding Sprites.FrontDefault}" />
                                     <Label
-                                        x:Name="LocationNameLabel"
+                                        x:Name="PokemonNameLabel"
                                         Text="{Binding Name}"
-                                        VerticalOptions="Center"
-                                        Margin="10" />
+                                        VerticalOptions="Center"/>
                                     <Label
-                                        x:Name="TemperatureLabel"
-                                        Text="{Binding PurpleType.Type, StringFormat='Type: {0}'}"
-                                        VerticalOptions="Center"
-                                        Margin="3" />
-                                    <Label
-                                        x:Name="CloudLabel"
-                                        Text="{Binding Id, StringFormat='Id#: {0}'}"
-                                        VerticalOptions="Center"
-                                        Margin="3" />
+                                        x:Name="IdLabel"
+                                        Text="{Binding Id, StringFormat='#{0}'}"
+                                        VerticalOptions="Center"/>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
+            </ListView> -->
         </Grid>
     </StackLayout>
 </ContentPage>

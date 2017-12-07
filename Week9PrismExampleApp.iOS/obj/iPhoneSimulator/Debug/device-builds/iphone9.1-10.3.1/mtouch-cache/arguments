@@ -63,6 +63,10 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
+	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Ansuria.XFGloss.1.0.6.59/lib/Xamarin.iOS10/XFGloss.dll \
+	-r \
+	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Ansuria.XFGloss.1.0.6.59/lib/Xamarin.iOS10/XFGloss.iOS.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Primitives.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Registry.AccessControl.dll \
@@ -369,7 +373,13 @@
 	-r \
 	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Xamarin.Forms.2.4.0.38779/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
+	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Ansuria.XFGloss.1.0.6.59/lib/Xamarin.iOS10/XFGloss.dll \
+	-r \
+	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/packages/Ansuria.XFGloss.1.0.6.59/lib/Xamarin.iOS10/XFGloss.iOS.dll \
+	-r \
 	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Newtonsoft.Json.dll \
+	-r \
+	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/DLToolkit.Forms.Controls.FlowListView.dll \
 	-r \
 	/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/System.Net.Http.Primitives.dll \
 	-r \
