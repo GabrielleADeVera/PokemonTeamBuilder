@@ -11,59 +11,72 @@
         Padding="0,20,0,0"
         HorizontalOptions="Center"
         VerticalOptions="Start">
-        <Button
-            Text="Navigation Example"
-            Command="{Binding NavToNewPageCommand}" />
+        <Label
+            Text="Team Builder"
+            HorizontalOptions="CenterAndExpand"/>
         <StackLayout
             Orientation="Horizontal"
             HorizontalOptions="CenterAndExpand">
             <Entry
                 Placeholder="Enter Pokemon"
                 Text="{Binding LocationEnteredByUser}"
-                WidthRequest="200" />
+                WidthRequest="150" />
             <Button
                 Text="Search"
                 Command="{Binding GetPokemonFromNameCommand}" />
         </StackLayout>
-        <ListView
-            x:Name="PokemonListView"
-            ItemsSource="{Binding PokemonCollection}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell
-                        x:Name="PokemonItemCell">
-                        <ViewCell.ContextActions>
-                            <MenuItem
-                                x:Name="MoreInfoButton"
-                                AutomationId="MoreInfoButton"
-                                BindingContext="{Binding Source={x:Reference PokemonListView}, Path=BindingContext}"
-                                Command="{Binding NavToMoreInfoPageCommand}"
-                                CommandParameter="{Binding Source={x:Reference PokemonItemCell}, Path=BindingContext}"
-                                Text="More" />
-                        </ViewCell.ContextActions>
-                        <ViewCell.View>
-                            <StackLayout
-                                Orientation="Horizontal">
-                                <Label
-                                    x:Name="LocationNameLabel"
-                                    Text="{Binding Name}"
-                                    VerticalOptions="Center"
-                                    Margin="10" />
-                                <Label
-                                    x:Name="TemperatureLabel"
-                                    Text="{Binding PurpleType.Type, StringFormat='Type: {0}'}"
-                                    VerticalOptions="Center"
-                                    Margin="3" />
-                                <Label
-                                    x:Name="CloudLabel"
-                                    Text="{Binding Id, StringFormat='Id#: {0}'}"
-                                    VerticalOptions="Center"
-                                    Margin="3" />
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView
+                x:Name="PokemonListView"
+                ItemsSource="{Binding PokemonCollection}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell
+                            x:Name="PokemonItemCell">
+                            <ViewCell.ContextActions>
+                                <MenuItem
+                                    x:Name="MoreInfoButton"
+                                    AutomationId="MoreInfoButton"
+                                    BindingContext="{Binding Source={x:Reference PokemonListView}, Path=BindingContext}"
+                                    Command="{Binding NavToMoreInfoPageCommand}"
+                                    CommandParameter="{Binding Source={x:Reference PokemonItemCell}, Path=BindingContext}"
+                                    Text="More" />
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout
+                                    Orientation="Horizontal">
+                                    <Image Source="{Binding Sprites.FrontShiny}"/>
+                                    <Image Source="{Binding Sprites.FrontDefault}" />
+                                    <Label
+                                        x:Name="LocationNameLabel"
+                                        Text="{Binding Name}"
+                                        VerticalOptions="Center"
+                                        Margin="10" />
+                                    <Label
+                                        x:Name="TemperatureLabel"
+                                        Text="{Binding PurpleType.Type, StringFormat='Type: {0}'}"
+                                        VerticalOptions="Center"
+                                        Margin="3" />
+                                    <Label
+                                        x:Name="CloudLabel"
+                                        Text="{Binding Id, StringFormat='Id#: {0}'}"
+                                        VerticalOptions="Center"
+                                        Margin="3" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </StackLayout>
 </ContentPage>
