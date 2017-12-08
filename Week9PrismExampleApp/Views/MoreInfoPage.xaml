@@ -4,17 +4,52 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     prism:ViewModelLocator.AutowireViewModel="True"
-    x:Class="Week9PrismExampleApp.Views.MoreInfoPage">
+    x:Class="Week9PrismExampleApp.Views.MoreInfoPage"
+    Padding="0,20,0,0">
+
+    <Page.Resources>
+        <ResourceDictionary>
+        <Style x:Key="SecondaryInfo" TargetType="Label" >
+            <Setter Property="FontSize"     Value="20"  />
+        </Style>
+        <Style x:Key="PrimaryInfo" TargetType="Label" >
+            <Setter Property="FontSize"     Value="28"  />
+        </Style> 
+        </ResourceDictionary>
+    </Page.Resources> 
+   <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="Red" StepPercentage="1" />
+            <xfg:GradientStep StepColor="Lime" StepPercentage=".5" />
+            <xfg:GradientStep StepColor="#ccd9ff" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout>
         <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
-        <Label
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="{Binding PokemonItem.Name, StringFormat='Name: {0}'}"
+                Style="{StaticResource PrimaryInfo}"/>
+            <Image
+                Source="{Binding PokemonItem.Sprites.FrontShiny}"/>
+            </StackLayout>
+        <Label 
+            Text="{Binding PokemonItem.Types[0].Type.Name, StringFormat='Type: {0}'}"
+            Style="{StaticResource SecondaryInfo}"/>
+        
+
+
+        
+<!--        <Label
             Text="{Binding WeatherItem.Wind.Speed, StringFormat='Wind Speed: {0}'}" />
         <Label
             Text="{Binding WeatherItem.Main.TempMax, StringFormat='Max Temp: {0}'}" />
         <Label
-            Text="{Binding WeatherItem.Main.TempMin, StringFormat='Min Temp: {0}'}" />
+            Text="{Binding WeatherItem.Main.TempMin, StringFormat='Min Temp: {0}'}" />-->
     </StackLayout>
 </ContentPage>

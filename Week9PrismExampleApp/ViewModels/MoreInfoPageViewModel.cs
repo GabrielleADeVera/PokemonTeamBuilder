@@ -6,6 +6,7 @@ using System.Linq;
 using Prism.Navigation;
 using Xamarin.Forms.Xaml;
 using static Week9PrismExampleApp.Models.WeatherItemModel;
+using static Week9PrismExampleApp.Models.PokemonItemModel;
 
 namespace Week9PrismExampleApp.ViewModels
 {
@@ -15,11 +16,11 @@ namespace Week9PrismExampleApp.ViewModels
 
 		public DelegateCommand GoBackCommand { get; set; }
 
-        private WeatherItem _weatherItem;
-        public WeatherItem WeatherItem
+        private PokemonItem _pokemonItem;
+        public PokemonItem PokemonItem
         {
-            get { return _weatherItem; }
-            set { SetProperty(ref _weatherItem, value); }
+            get { return _pokemonItem; }
+            set { SetProperty(ref _pokemonItem, value); }
         }
 
         public MoreInfoPageViewModel(INavigationService navigationService)
@@ -42,7 +43,7 @@ namespace Week9PrismExampleApp.ViewModels
         {
             if (parameters.ContainsKey("WeatherItemInfo"))
             {
-                WeatherItem = (WeatherItem)parameters["WeatherItemInfo"];
+                PokemonItem = (PokemonItem)parameters["WeatherItemInfo"];
             }
         }
     }
