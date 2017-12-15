@@ -16,12 +16,20 @@ namespace Week9PrismExampleApp.Views {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+<<<<<<< HEAD
         private global::DLToolkit.Forms.Controls.FlowListView flowListView;
+=======
+        private global::Xamarin.Forms.ListView PokemonListView;
+>>>>>>> master
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+<<<<<<< HEAD
             flowListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "flowListView");
+=======
+            PokemonListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "PokemonListView");
+>>>>>>> master
         }
     }
 }
