@@ -7,11 +7,19 @@
     xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     prism:ViewModelLocator.AutowireViewModel="True"
 <<<<<<< HEAD
+<<<<<<< HEAD
     x:Class="Week9PrismExampleApp.Views.MoreInfoPage">
 =======
     x:Class="Week9PrismExampleApp.Views.MoreInfoPage"
     Padding="0,20,0,0">
 >>>>>>> JohnOrcino
+=======
+    x:Class="Week9PrismExampleApp.Views.MoreInfoPage"
+    Padding="0,20,0,0">
+=======
+    x:Class="Week9PrismExampleApp.Views.MoreInfoPage">
+>>>>>>> master
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
 
     <Page.Resources>
         <ResourceDictionary>
@@ -24,8 +32,11 @@
         </ResourceDictionary>
     </Page.Resources> 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
    <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="150">
             <xfg:GradientStep StepColor="Red" StepPercentage="1" />
@@ -33,11 +44,18 @@
             <xfg:GradientStep StepColor="#ccd9ff" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
+<<<<<<< HEAD
 >>>>>>> JohnOrcino
+=======
+=======
+
+>>>>>>> master
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
     <StackLayout>
         <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <Label
             Text="{Binding PokemonItem.Name, StringFormat='Name: {0}'}"
@@ -46,6 +64,8 @@
             Text="{Binding Stat.BaseStat, StringFormat='BaseStat: {0}'}"
             Style="{StaticResource SecondaryInfo}"/>
 =======
+=======
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
         <StackLayout
             Orientation="Horizontal">
             <Label
@@ -58,7 +78,18 @@
             Text="{Binding PokemonItem.Types[0].Type.Name, StringFormat='Type: {0}'}"
             Style="{StaticResource SecondaryInfo}"/>
         
+<<<<<<< HEAD
 >>>>>>> JohnOrcino
+=======
+=======
+        <Label
+            Text="{Binding PokemonItem.Name, StringFormat='Name: {0}'}"
+            Style="{StaticResource PrimaryInfo}"/>
+        <Label 
+            Text="{Binding Stat.BaseStat, StringFormat='BaseStat: {0}'}"
+            Style="{StaticResource SecondaryInfo}"/>
+>>>>>>> master
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
 
 
         

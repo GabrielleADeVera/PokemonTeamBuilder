@@ -1,5 +1,19 @@
 ﻿<Properties StartupConfiguration="{A448DDE5-BC84-4996-834C-1A401D8C3692}|Default">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week9PrismExampleApp/Views/MoreInfoPage.xaml">
+    <Files>
+      <File FileName="Week9PrismExampleApp/Views/MoreInfoPage.xaml" Line="7" Column="55" NotebookId="1" />
+      <File FileName="packages/Ansuria.XFGloss.1.0.6.59/readme.txt" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Week9PrismExampleApp.iOS/AppDelegate.cs" Line="30" Column="40" NotebookId="1" />
+      <File FileName="Week9PrismExampleApp/App.xaml.cs" Line="12" Column="32" NotebookId="2" />
+      <File FileName="Week9PrismExampleApp/Models/PokemonItemModel.cs" Line="107" Column="39" NotebookId="2" />
+      <File FileName="Week9PrismExampleApp/Models/PokemonCharcModel.cs" Line="167" Column="9" NotebookId="2" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MoreInfoPageViewModel.cs" Line="46" Column="28" NotebookId="2" />
+      <File FileName="Week9PrismExampleApp/ViewModels/MainPageViewModel.cs" Line="65" Column="13" NotebookId="2" />
+=======
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Week9PrismExampleApp/App.xaml.cs" Line="23" Column="83" />
@@ -23,6 +37,7 @@
       <File FileName="Week9PrismExampleApp/ViewModels/MoreInfoPageViewModel.cs" Line="8" Column="59" />
       <File FileName="Week9PrismExampleApp/Views/MoreInfoPage.xaml.cs" Line="1" Column="1" />
       <File FileName="Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.Views.MoreInfoPage.xaml.g.cs" Line="1" Column="1" />
+<<<<<<< HEAD
 =======
   <MonoDevelop.Ide.Workbench ActiveDocument="Week9PrismExampleApp/Views/MoreInfoPage.xaml">
     <Files>
@@ -35,6 +50,9 @@
       <File FileName="Week9PrismExampleApp/ViewModels/MoreInfoPageViewModel.cs" Line="46" Column="28" NotebookId="2" />
       <File FileName="Week9PrismExampleApp/ViewModels/MainPageViewModel.cs" Line="65" Column="13" NotebookId="2" />
 >>>>>>> JohnOrcino
+=======
+>>>>>>> master
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
     </Files>
     <FloatingWindows>
       <FloatingWindow WindowId="1" X="36" Y="519" Width="1004" Height="786">
