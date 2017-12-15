@@ -17,19 +17,33 @@ namespace Week9PrismExampleApp.Views {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
+        private global::Xamarin.Forms.ListView PokemonListView;
+=======
+        private global::DLToolkit.Forms.Controls.FlowListView flowListView;
+>>>>>>> JohnOrcino
+=======
         private global::DLToolkit.Forms.Controls.FlowListView flowListView;
 =======
         private global::Xamarin.Forms.ListView PokemonListView;
 >>>>>>> master
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
 <<<<<<< HEAD
+<<<<<<< HEAD
+            PokemonListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "PokemonListView");
+=======
+            flowListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "flowListView");
+>>>>>>> JohnOrcino
+=======
             flowListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "flowListView");
 =======
             PokemonListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "PokemonListView");
 >>>>>>> master
+>>>>>>> 59fac6d8d57066342e9e096002c46ca55c34d50a
         }
     }
 }
