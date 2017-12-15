@@ -11,8 +11,8 @@
 namespace Week9PrismExampleApp.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gabrielledevera/Projects/Week10Example/Week9PrismExampleApp/Week9PrismExam" +
-        "pleApp/Views/SamplePageForNavigation.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/Vie" +
+        "ws/SamplePageForNavigation.xaml")]
     public partial class SamplePageForNavigation : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

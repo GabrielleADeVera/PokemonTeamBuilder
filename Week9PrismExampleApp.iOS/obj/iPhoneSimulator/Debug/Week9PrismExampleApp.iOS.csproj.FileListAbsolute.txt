@@ -153,6 +153,7 @@
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/ibtool/_BundleResourceWithLogicalName.items
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/actool/_PartialAppManifest.items
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/optimized/gaming.png
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/optimized/
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/Week9PrismExampleApp.iOS.csprojResolveAssemblyReference.cache
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp.iOS/obj/iPhoneSimulator/Debug/Week9PrismExampleApp.iOS.csproj.CoreCompileInputs.cache

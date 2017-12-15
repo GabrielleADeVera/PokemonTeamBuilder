@@ -81,7 +81,6 @@
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/bin/Debug/Xamarin.Forms.Xaml.xml
-/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.csprojResolveAssemblyReference.cache
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.csproj.CoreCompileInputs.cache
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.App.xaml.g.cs
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.Views.MainPage.xaml.g.cs

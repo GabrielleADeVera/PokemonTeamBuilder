@@ -11,8 +11,8 @@
 namespace Week9PrismExampleApp.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gabrielledevera/Projects/Week10Example/Week9PrismExampleApp/Week9PrismExam" +
-        "pleApp/Views/EasyTestPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/Vie" +
+        "ws/EasyTestPage.xaml")]
     public partial class EasyTestPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
