@@ -115,6 +115,12 @@
     <Reference Include="Microsoft.AppCenter.Crashes">
       <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.0.1\lib\MonoAndroid403\Microsoft.AppCenter.Crashes.dll</HintPath>
     </Reference>
+    <Reference Include="XFGloss">
+      <HintPath>..\packages\Ansuria.XFGloss.1.0.6.59\lib\MonoAndroid10\XFGloss.dll</HintPath>
+    </Reference>
+    <Reference Include="XFGloss.Droid">
+      <HintPath>..\packages\Ansuria.XFGloss.1.0.6.59\lib\MonoAndroid10\XFGloss.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Week9PrismExampleApp\Week9PrismExampleApp.csproj">
