@@ -10,7 +10,7 @@
     <Page.Resources>
         <ResourceDictionary>
         <Style x:Key="SecondaryInfo" TargetType="Label" >
-            <Setter Property="FontSize"     Value="20"  />
+            <Setter Property="FontSize"     Value="42"  />
         </Style>
         <Style x:Key="PrimaryInfo" TargetType="Label" >
             <Setter Property="FontSize"     Value="28"  />
@@ -25,9 +25,12 @@
         <Label
             Text="{Binding PokemonItem.Name, StringFormat='Name: {0}'}"
             Style="{StaticResource PrimaryInfo}"/>
-        <Label 
-            Text="{Binding Stat.BaseStat, StringFormat='BaseStat: {0}'}"
-            Style="{StaticResource SecondaryInfo}"/>
+        <Image 
+            Source="{Binding PokemonItem.Sprites.FrontShiny}"
+            />
+		<Label
+			Text="{Binding PokemonItem.Types[0].Type.Name, StringFormat='Type: {0}'}"
+		Style="{StaticResource SecondaryInfo}"/>
 
 
         
