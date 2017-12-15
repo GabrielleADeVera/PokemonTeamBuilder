@@ -9,7 +9,7 @@ using Microsoft.Practices.Unity;
 using Prism.Unity;
 using Week9PrismExampleApp.Views;
 using Xamarin.Forms.Xaml;
-
+using DLToolkit.Forms.Controls;
 namespace Week9PrismExampleApp
 {
     public partial class App : PrismApplication
@@ -19,6 +19,7 @@ namespace Week9PrismExampleApp
         protected override void OnInitialized()
         {
             InitializeComponent();
+            FlowListView.Init(); 
 
             AppCenter.Start(ApiKeys.AnalyticsKeyiOS + ApiKeys.AnalyticsKeyAndroid,
                    typeof(Analytics), typeof(Crashes));

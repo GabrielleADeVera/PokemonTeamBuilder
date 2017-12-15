@@ -11,17 +11,25 @@
 namespace Week9PrismExampleApp.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/gabrielledevera/Projects/Week10Example/Week9PrismExampleApp/Week9PrismExam" +
-        "pleApp/Views/MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/Vie" +
+        "ws/MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+<<<<<<< HEAD
         private global::Xamarin.Forms.ListView PokemonListView;
+=======
+        private global::DLToolkit.Forms.Controls.FlowListView flowListView;
+>>>>>>> JohnOrcino
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+<<<<<<< HEAD
             PokemonListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "PokemonListView");
+=======
+            flowListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "flowListView");
+>>>>>>> JohnOrcino
         }
     }
 }

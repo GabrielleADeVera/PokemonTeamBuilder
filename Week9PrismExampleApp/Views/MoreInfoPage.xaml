@@ -4,8 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     prism:ViewModelLocator.AutowireViewModel="True"
+<<<<<<< HEAD
     x:Class="Week9PrismExampleApp.Views.MoreInfoPage">
+=======
+    x:Class="Week9PrismExampleApp.Views.MoreInfoPage"
+    Padding="0,20,0,0">
+>>>>>>> JohnOrcino
 
     <Page.Resources>
         <ResourceDictionary>
@@ -17,17 +23,42 @@
         </Style> 
         </ResourceDictionary>
     </Page.Resources> 
+<<<<<<< HEAD
 
+=======
+   <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="Red" StepPercentage="1" />
+            <xfg:GradientStep StepColor="Lime" StepPercentage=".5" />
+            <xfg:GradientStep StepColor="#ccd9ff" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+>>>>>>> JohnOrcino
     <StackLayout>
         <Button
             Text="Go Back!"
             Command="{Binding GoBackCommand}" />
+<<<<<<< HEAD
         <Label
             Text="{Binding PokemonItem.Name, StringFormat='Name: {0}'}"
             Style="{StaticResource PrimaryInfo}"/>
         <Label 
             Text="{Binding Stat.BaseStat, StringFormat='BaseStat: {0}'}"
             Style="{StaticResource SecondaryInfo}"/>
+=======
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="{Binding PokemonItem.Name, StringFormat='Name: {0}'}"
+                Style="{StaticResource PrimaryInfo}"/>
+            <Image
+                Source="{Binding PokemonItem.Sprites.FrontShiny}"/>
+            </StackLayout>
+        <Label 
+            Text="{Binding PokemonItem.Types[0].Type.Name, StringFormat='Type: {0}'}"
+            Style="{StaticResource SecondaryInfo}"/>
+        
+>>>>>>> JohnOrcino
 
 
         

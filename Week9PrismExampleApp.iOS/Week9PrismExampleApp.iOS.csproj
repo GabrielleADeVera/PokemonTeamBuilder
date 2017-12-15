@@ -24,7 +24,7 @@
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
     <IOSDebuggerPort>38709</IOSDebuggerPort>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
@@ -126,6 +126,12 @@
     </Reference>
     <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
       <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.0.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="XFGloss">
+      <HintPath>..\packages\Ansuria.XFGloss.1.0.6.59\lib\Xamarin.iOS10\XFGloss.dll</HintPath>
+    </Reference>
+    <Reference Include="XFGloss.iOS">
+      <HintPath>..\packages\Ansuria.XFGloss.1.0.6.59\lib\Xamarin.iOS10\XFGloss.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
