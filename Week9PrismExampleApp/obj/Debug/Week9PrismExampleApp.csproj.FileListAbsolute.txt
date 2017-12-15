@@ -89,3 +89,4 @@
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.Views.MoreInfoPage.xaml.g.cs
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.dll
 /Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.pdb
+/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/obj/Debug/Week9PrismExampleApp.csprojResolveAssemblyReference.cache
