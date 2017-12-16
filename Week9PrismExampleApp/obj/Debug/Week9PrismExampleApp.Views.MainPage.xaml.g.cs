@@ -11,8 +11,8 @@
 namespace Week9PrismExampleApp.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/orcin002/Downloads/TeamBuilder/PokemonTeamBuilder/Week9PrismExampleApp/Vie" +
-        "ws/MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/orcin002/Downloads/TeamBuilder2/PokemonTeamBuilder/Week9PrismExampleApp/Vi" +
+        "ews/MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

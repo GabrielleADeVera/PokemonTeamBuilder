@@ -2,8 +2,11 @@
 <Paths>
   <ManifestDocuments>
     <ManifestDocument>obj/Debug/__library_projects__/Microsoft.AppCenter.Analytics.Android.Bindings/library_project_imports/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/__library_projects__/Microsoft.AppCenter.Analytics.Android.Bindings/library_project_imports/manifest/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/__library_projects__/Microsoft.AppCenter.Android.Bindings/library_project_imports/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/__library_projects__/Microsoft.AppCenter.Android.Bindings/library_project_imports/manifest/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/__library_projects__/Microsoft.AppCenter.Crashes.Android.Bindings/library_project_imports/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/__library_projects__/Microsoft.AppCenter.Crashes.Android.Bindings/library_project_imports/manifest/AndroidManifest.xml</ManifestDocument>
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
